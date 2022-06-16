@@ -1,0 +1,300 @@
+/*  COLOR CODES  */
+/*{
+    c1 = logo-background, send button
+    c2 = logo-a, textbox
+    c3 = status-info, sidebar
+    c4 = contact-sidebar, rchat
+    c5 = schat
+    c6 = chat-area-background
+    c7 = footer
+}*/ 
+:root
+{ 
+    /*  DARK THEME  */
+    --c1:#01010a;
+    --c2:#2e2b33;
+    --c3:#212129;
+    --c4:#161616;
+    --c5:#2b2a2a;
+    --c6:#0e0d0d;
+    --c7:#000000;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* DEFAULT VIEW */
+*
+{
+    padding: 0px;
+    margin: 0px;
+    color:grey;
+}
+body
+{
+    background-color: var(--c6);
+
+}
+
+/*  MAIN DIV  */
+.display
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*  ELEMENTS OF MAIN DIV  */
+
+.body
+{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+.header
+{
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0px;
+    width:100%;
+    height: 70px;
+    background-color: var(--c1);
+}
+.footer
+{
+    position: fixed;
+    bottom: 0px;
+    width:100%;
+    height: 20px;
+    background-color: black;
+    color: grey;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+}
+
+/*  ELEMENTS OF HEADER  */
+.logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22%;
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 30px;
+}
+.logo a
+{
+    text-decoration: none;
+    color:var(--c2);
+}
+.status
+{
+    width: 78%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--c3);
+}
+.contact-info
+{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+.display_picture
+{
+    width: 8%;
+}
+.display_picture img
+{
+    width: 55px;
+    margin: 1px;
+    margin-left: 12px;
+    border-radius: 50px;
+}
+.chat_info
+{
+    width: 92%;
+    height: 80%;
+    margin: 5px;
+}
+.chat_name
+{
+    font-size: 25px;
+}
+.chat_about
+{
+    font-size: 15px;
+}
+.morebtn
+{
+    width: 5%;
+}
+.btn
+{
+    margin-top: 20px;
+}
+.btn button
+{
+    background-color: var(--c3);
+    border: none;
+}
+
+
+/*  ELEMENTS OF BODY  */
+.sidebar
+{
+    position: fixed;
+    top: 70px;
+    width:22%;
+    height: 100%;
+    background-color: var(--c3);
+}
+.contact
+{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: var(--c4);   
+}
+.dp
+{
+    width: 20%;
+}
+.dp img
+{
+    width: 50px;
+    margin-left: 1px;
+    border-radius: 50px;
+}
+.contact_name
+{
+    width: 80%; 
+}
+.contact_name_name
+{
+    margin-top: 3px;
+    font-size: 18px;
+}
+.contact_name_about
+{
+    font-size: 13px;
+}
+.hr_short
+{
+    width: 90%;
+    margin: auto;
+}
+.chat_area
+{
+    width:78%;
+    height: auto;
+    margin-bottom: 30px;
+    min-height: 0px;
+    background-color: var(--c6);
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+.chat
+{
+    margin: 10px;
+    width:20%;
+    padding: 15px;
+    border-radius: 10px;
+}
+.rchat
+{
+    background-color: var(--c4);
+    margin-left: 20px;
+}
+.schat
+{
+    background-color: var(--c5);
+    margin-left: auto;
+    margin-right: 20px;
+}
+.typecast
+{
+    position: fixed;
+    bottom: 20px;
+    height: 60px;
+    width: 79%;
+    display: flex;
+    justify-content: center;
+}
+.typer
+{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;  
+    padding: 2px;  
+    border-radius: 10px;
+    border: 2px solid grey;
+    width: 95%;
+    height: 30px;
+    background-color: var(--c2);
+}
+.textarea
+{
+    position: absolute;
+    left:30px;
+    bottom: 10px;
+    width: 89%;
+    height: 30px;
+}
+.textarea input
+{
+    width: 100%;
+    height: 25px;
+    background-color:var(--c2);
+    border: none;
+    color: white;
+}
+.textarea input:focus
+{
+    outline: none;
+}
+.send
+{
+    background-color: var(--c1);
+    position: absolute;
+    text-align: center;
+    border-radius: 10%;
+    right:30px;
+    bottom: 14px;
+    width: 5%;
+    height: 25px;
+}
+.sendbtn
+{
+    position: absolute;
+    right:10px;
+    top: 2px;
+}
+.sendbtn button
+{
+    background-color: var(--c1);
+    border: none;
+}
+
+/*  ELEMENTS OF FOOTER  */
+.copyright
+{
+    position: absolute;
+    left: 0px;
+}
+.appname
+{
+    position: absolute;
+    right: 0px;
+}
